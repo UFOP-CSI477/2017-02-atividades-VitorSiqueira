@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Vitor de Siqueira Cotta">
+		<title>Cadastro</title>
+		<link rel="stylesheet" href="_bootstrap/css/bootstrap.css">
+  		<link rel="stylesheet" href="_css/estilo.css">
+	</head>
+	<body>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Voltar</a></li>
+			</ul>
+		</nav>
+		<div class="margem">									
+			<div id="corpo">
+				<img src="_imagem/ufoplogo.jpg" style="width: 100%;">
+				<form method="get">
+					<fieldset"><legend>Cadastro</legend>
+						<fieldset><legend>Dados do Usuário</legend>
+							<label for="cNome">Nome</label><br>
+							<input type="text" name="tNome" id="cNome" placeholder="Digite seu nome."><br>
+							<label for="cCPF">CPF: </label><br>
+							<input type="text" name="tCPF" id="cCPF" placeholder="Digite seu CPF."><br>
+							<label for="cRG">RG: </label><br>
+							<input type="text" name="tRG" id="cRG" placeholder="Digite seu RG."><br>
+							<fieldset id="genero"><legend>Gênero</legend>
+								<input type="radio" name="tGenero" id="cMasculino"  value="M">Masculino<br>
+								<input type="radio" name="tGenero" id="cFemenino"   value="F">Feminino<br>
+								<input type="radio" name="tGenero" id="cNaoBinario" value="I">Não Binário<br>
+							</fieldset>
+							<label for="cTipoSanguineo">Tipo Sanguíneo</label><br>
+							<select name="tTipoSanguineo" id="cTipoSanguineo">
+								<option value="0"></option>
+								<option value="1">A</option>
+								<option value="2">B</option>
+								<option value="3">AB</option>
+								<option value="4">O</option>
+							</select>
+							<fieldset><legend>RH</legend>
+								<input type="radio" name="tRH" id="cRH" value="+">Positivo<br>
+								<input type="radio" name="tRH" id="cRH" value="-">Negativo<br>
+							</fieldset>
+						</fieldset>
+						<fieldset><legend>Endereço</legend>
+							<label for="cEstado">Estado</label><br>
+							<select name="tEstado" id="cEstado" >
+								<option value="0"></option>
+								<optgroup label="Sudeste">
+									<option value="1">Espírito Santo</option>
+									<option value="2">Minas Gerais</option>
+									<option value="3">Rio de Janeiro</option>
+									<option value="4">São Paulo</option>
+								</optgroup>
+							</select><br>
+							<label for="cCidada">Cidade</label><br>
+							<select name="tCidade" id="cCidada" >
+								<option value="0"></option>
+								<option value="1">Belo Horizonte</option>
+								<option value="2">Campinas</option>
+								<option value="3">Itabira</option>
+								<option value="4">João Monlevade</option>
+								<option value="5">Rio de Janeiro</option>
+								<option value="6">São Paulo</option>
+								<option value="7">Sete Lagos</option>
+								<option value="8">Vitória</option>
+							</select><br>
+							<label for="cBairro">Bairro</label><br>
+							<input type="text" name="tBairro" id="cBairro" placeholder="Digite seu bairro."><br>
+							<label for="cRua">Rua</label><br>
+							<input type="text" name="tRua" id="cRua" placeholder="Digite sua rua."><br>
+							<label for="cNumero">Número da residência</label><br>
+							<input type="text" name="tNumero" id="cNumero" placeholder="Digite número da casa."><br>
+							<label for="tComplemento">Complemento</label><br>
+							<input type="text" name="tComplemento" id="cComplemento"><br>
+						</fieldset>
+						<fieldset id="contato"><legend>Contato</legend>
+							<fieldset>
+								<label for="cTelefone">Telefone</label><br>
+								<input type="text" name="tTelefone" id="cTelefone"><br>
+							</fieldset>
+							<fieldset>
+								<label for="cCelular">Celular</label><br>
+								<input type="text" name="tCelular" id="cCelular"><br>
+								<label for="cTelegran">Telegran</label>
+								<input type="checkbox" name="tTelegran" id="cTelegran">
+								<label for="cWhatsapp">WhatsApp</label>
+								<input type="checkbox" name="tWhatsapp" id="cWhatsapp">
+							</fieldset>
+							<fieldset id="emai"><legend>E-Mail</legend>
+								<label for="cEmail">E-Mail</label><br>
+								<input type="email" name="tEmail" id="cEmail"><br>
+								<label for="cEmailCheck">Confirmar E-mail</label><br>
+								<input type="email" name="tEmailCheck" id="cEmailCheck"><br>
+								<label for="cSenha">Senha</label><br>
+								<input type="password" name="tSenha" id="cSenha"><br>
+								<label for="cSenhaCheck">Confirmar Senha</label><br>
+								<input type="password" name="tSenhaCheck" id="cSenhaCheck"><br>
+							</fieldset>
+							<fieldset><legend>Acesso</legend>
+								<label for="cBiblioteca">Biblioteca</label>
+								<input type="checkbox" name="tBiblioteca" id="cBiblioteca"><br>
+								<label for="cCampo">Campo</label>
+								<input type="checkbox" name="tCampo" id="cCampo"><br>
+								<label for="cClube">Clube</label>
+								<input type="checkbox" name="tClube" id="cClube"><br>
+								<label for="cRestaurante">Reaturante</label>
+								<input type="checkbox" name="tRestaurante" id="cRestaurante"><br>
+							</fieldset>
+						</fieldset>
+					</fieldset>
+					<input type="submit" formaction="sucessoCadastro.html" value="Cadastrar"><br>
+        			<input type="reset" value="Limpar"><br>
+				</form>
+			</div>
+			<footer>
+				Universidade Federal de Ouro Preto <br>
+				Aluno: Vitor de Siqueira Cotta <br>
+				Matrícula: 14.1.8143 <br>
+				E-mail: Vithorkross@outlook.com <br>
+			</footer>
+		</div>			
+	</body>
+</html>

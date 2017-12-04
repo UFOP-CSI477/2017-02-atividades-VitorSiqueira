@@ -1,0 +1,132 @@
+.margem {
+	margin-left: 6cm;
+	margin-right: 6cm;
+}
+
+body {
+	background-color: black;
+}
+
+div#corpo {
+	background-color: gray;
+	min-height: 1000px;
+}
+
+footer {
+	background-color: darkred;
+	bottom: 0;
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	width: 100%;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+input[type=text] {
+	width: 400px;
+}
+
+input[type=submit], input[type=reset] {
+	width: 100px;
+}
+
+nav#menu {
+	display: block;
+}
+
+nav#menu ul {
+	list-style: none;
+	position: absolute;
+	top: 250px;
+}
+
+nav#menu li {
+	background-color: gray;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	margin-top: 5px;
+	margin-bottom: : 5px;
+	min-width: 130px;
+	padding: 15px;
+}
+
+nav#menu li:hover {
+	background-color: darkred;
+}
+
+nav#menu a {
+	color: white;
+	text-decoration: none;
+}
+
+fieldset {
+	display: block;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-top: 0.35em;
+	padding-bottom: 0.625em;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	border: 2px groove;
+}
+
+legend {
+	background-color: black;
+	color: white;
+	border: 2px groove;
+	display: block;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+select {
+	width: 200px;
+}
+
+tr#titulo {
+	background-color: rgb(211, 197, 77);
+	color: white;
+	font-weight: bold;
+}
+tr#ativado{
+	background-color: rgb(92, 151, 225); 
+	color: white;
+	font-weight: bold;
+}
+tr#desligado{
+	background: rgb(241, 242, 241);
+}
+
+#fundoAzul {
+	background-color: rgb(236, 241, 246);
+}
+
+#inputArea input[type="text"], #inputArea textarea {
+    font-family: Arial, Sans-Serif;
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: block;
+    padding: 4px;
+    border: solid 1px #85b1de; 
+    width: 300px;
+    background-color: #EDF2F7;
+}
+
+#inputArea {
+    font-family: Arial, Sans-Serif;
+    font-size: 13px;
+    background-color: #d6e5f4;
+    padding: 10px;
+    max-width: 328px;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}

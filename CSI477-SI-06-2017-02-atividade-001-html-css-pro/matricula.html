@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Vitor de Siqueira Cotta">
+		<title>Matrícula</title>
+		<link rel="stylesheet" href="_bootstrap/css/bootstrap.css">
+  		<link rel="stylesheet" href="_css/estilo.css">
+	</head>
+	<body>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Voltar</a></li>
+			</ul>
+		</nav>
+		<div class="margem">									
+			<div id="corpo">
+				<img src="_imagem/ufoplogo.jpg" style="width: 100%;">
+				<form method="get">
+					<fieldset><legend>Matrícula</legend>
+						<label for="cSemestere">Semestre</label><br>
+						<select name="tSemetre" id="cSemestere">
+							<option value="0"></option>
+							<option value="1">2017/1</option>
+							<option value="2">2017/2</option>
+							<option value="3">2018/1</option>
+							<option value="4">2018/2</option>
+						</select><br>
+						<label for="cTipoAluno">Aluno</label><br>
+						<select name="tTipoAluno" id="cTipoAluno">
+							<option value="0"></option>
+							<option value="1">Ampla Concorrência</option>
+							<option value="2">Bolsista</option>
+							<option value="3">Cota</option>
+							<option value="4">Privado</option>
+						</select><br>
+						<label for="cDisciplina">Disciplina</label><br>
+						<select name="tDisciplina" id="cDisciplina">
+							<option value="0"></option>
+							<option value="1">Prog 1</option>
+							<option value="2">Prog 2</option>
+							<option value="3">AEDS 1</option>
+							<option value="4">AEDS 2</option>
+							<option value="4">Redes</option>
+						</select><br>
+						<fieldset><legend>Presença</legend>
+							<label for="cPresencar">Regular</label>
+							<input type="radio" name="tPresenca" id="cPresencar">
+							<label for="cPresenca">Ouvinte</label>
+							<input type="radio" name="tPresenca" id="cPresenca">
+						</fieldset>
+					</fieldset>
+					<input type="submit" formaction="sucessoMatricula.html" value="Cadastrar"><br>
+        			<input type="reset" value="Limpar"><br>
+				</form>
+			</div>
+			<footer>
+				Universidade Federal de Ouro Preto <br>
+				Aluno: Vitor de Siqueira Cotta <br>
+				Matrícula: 14.1.8143 <br>
+				E-mail: Vithorkross@outlook.com <br>
+			</footer>
+		</div>			
+	</body>
+</html>
