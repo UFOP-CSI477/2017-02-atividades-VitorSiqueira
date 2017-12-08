@@ -51,7 +51,7 @@ function calcularIMC()
   document.getElementById("alertaV3").style.display = "none";
 
   
-  if(resultado <= 17)
+  if(resultado < 17)
   {
     document.getElementById("grupoV3").classList.add("alert-danger");
     document.getElementById("alertaV3").style.display = "block";
@@ -59,7 +59,7 @@ function calcularIMC()
     document.dados.classificacao.focus();
     return;
   }
-  else if(resultado >= 17.1 && resultado <= 18.5)
+  else if(resultado >= 17 && resultado < 18.5)
   {
     document.getElementById("grupoV3").classList.add("alert-warning");
     document.getElementById("alertaV3").style.display = "block";
@@ -67,14 +67,14 @@ function calcularIMC()
     document.dados.classificacao.focus();
     return;
   }
-  else if(resultado >= 18.6 && resultado <= 24.9)
+  else if(resultado >= 18.5 && resultado < 25)
   {
     document.getElementById("grupoV3").classList.add("alert-success");
     document.dados.classificacao.value = "Peso normal";
     document.dados.classificacao.focus();
     return;
   }
-  else if(resultado >= 25 && resultado <= 29.9)
+  else if(resultado >= 25 && resultado < 30)
   {
     document.getElementById("grupoV3").classList.add("alert-warning");
     document.getElementById("alertaV3").style.display = "block";
@@ -82,7 +82,7 @@ function calcularIMC()
     document.dados.classificacao.focus();
     return;
   }
-  else if(resultado >= 30 && resultado <= 34.9)
+  else if(resultado >= 30 && resultado < 35)
   {
     document.getElementById("grupoV3").classList.add("alert-danger");
     document.getElementById("alertaV3").style.display = "block";
@@ -90,7 +90,7 @@ function calcularIMC()
     document.dados.classificacao.focus();
     return;
   }
-  else if(resultado >= 35 && resultado <= 39.9)
+  else if(resultado >= 35 && resultado < 40)
   {
     document.getElementById("grupoV3").classList.add("alert-danger");
     document.getElementById("alertaV3").style.display = "block";
