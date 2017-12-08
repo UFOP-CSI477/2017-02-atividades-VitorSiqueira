@@ -1,0 +1,64 @@
+<!--
+Aluno: Vitor de Siqueira Cotta
+Matrícula: 14.1.8143
+Disciplina: CSI477 - SISTEMAS WEB I - Turma 11
+Professor: FERNANDO BERNARDES DE OLIVEIRA
+Atividade: Calcular IMC
+Data: 08/12/2017
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Vitor de Siqueira Cotta">
+		<title>Calcular IMC</title>
+		<link rel="stylesheet" href="bootstrap.css">
+		<script src="funcaoIMC.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron text-center">
+				<h2>Calcular IMC</h2>
+			</div>
+			<form name="dados">
+				<div id="grupoV1" class="form-group">
+					<label for="valor1">Informe seu peso em KG</label>
+					<input name="valor1" type="text" class="form-control">
+					<div class="alert alert-danger" style="display: none" id="alertaV1">
+						Informe seu peso com valores válidos.
+					</div>
+				</div>
+				<div id="grupoV2" class="form-group">
+					<label for="valor2">Informe sua altura em CM</label>
+					<input name="valor2" type="text" class="form-control">
+					<div class="alert alert-danger" style="display: none" id="alertaV2">
+						Informe sua altura com valores válidos.
+					</div>
+				</div>
+				<div id="grupoRes" class="form-group">
+					<label for="resultado">Resultado</label>
+					<input name="resultado" type="text" disabled="disabled" class="form-control">
+				</div>
+				<div id="grupoV3" class="form-group">
+					<label for="classificacao">Classificação</label>
+					<input name="classificacao" type="text" disabled="disabled" class="form-control">
+					<div class="alert" style="display: none" id="alertaV3">
+						Seu peso não está ideal.
+					</div>
+				</div>
+				<div id="grupoRes" class="form-group">
+					<label for="pesoMin">Peso mínimo ideal</label>
+					<input name="pesoMin" type="text" disabled="disabled" class="form-control">
+				</div>
+				<div id="grupoRes" class="form-group">
+					<label for="pesoMax">Peso máximo ideal</label>
+					<input name="pesoMax" type="text" disabled="disabled" class="form-control">
+				</div>
+				<div class="text-center">
+					<button type="button" class="btn btn-primary"onclick="calcularIMC()">Calcular IMC</button>
+					<button type="reset" class="btn btn-primary">Limpar</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
