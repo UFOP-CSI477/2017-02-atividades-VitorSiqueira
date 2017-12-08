@@ -50,18 +50,27 @@ function calcularIMC()
   document.getElementById("grupoV3").classList.remove("alert-success");
   document.getElementById("alertaV3").style.display = "none";
 
-  if(resultado <= 18.5)
+  
+  if(resultado <= 17)
   {
     document.getElementById("grupoV3").classList.add("alert-danger");
     document.getElementById("alertaV3").style.display = "block";
-    document.dados.classificacao.value = "Subnutrição";
+    document.dados.classificacao.value = "Muito abaixo do peso";
+    document.dados.classificacao.focus();
+    return;
+  }
+  else if(resultado >= 17.1 && resultado <= 18.5)
+  {
+    document.getElementById("grupoV3").classList.add("alert-warning");
+    document.getElementById("alertaV3").style.display = "block";
+    document.dados.classificacao.value = "Abaixo do peso";
     document.dados.classificacao.focus();
     return;
   }
   else if(resultado >= 18.6 && resultado <= 24.9)
   {
     document.getElementById("grupoV3").classList.add("alert-success");
-    document.dados.classificacao.value = "Saudável";
+    document.dados.classificacao.value = "Peso normal";
     document.dados.classificacao.focus();
     return;
   }
@@ -69,7 +78,7 @@ function calcularIMC()
   {
     document.getElementById("grupoV3").classList.add("alert-warning");
     document.getElementById("alertaV3").style.display = "block";
-    document.dados.classificacao.value = "Sobrepeso";
+    document.dados.classificacao.value = "Acima do peso";
     document.dados.classificacao.focus();
     return;
   }
@@ -85,7 +94,7 @@ function calcularIMC()
   {
     document.getElementById("grupoV3").classList.add("alert-danger");
     document.getElementById("alertaV3").style.display = "block";
-    document.dados.classificacao.value = "Obesidade grau 2";
+    document.dados.classificacao.value = "Obesidade II (severa)";
     document.dados.classificacao.focus();
     return;
   }
@@ -93,7 +102,7 @@ function calcularIMC()
   {
     document.getElementById("grupoV3").classList.add("alert-danger");
     document.getElementById("alertaV3").style.display = "block";
-    document.dados.classificacao.value = "Obesidade grau 3";
+    document.dados.classificacao.value = "Obesidade III (mórbida)";
     document.dados.classificacao.focus();
     return;
   }
