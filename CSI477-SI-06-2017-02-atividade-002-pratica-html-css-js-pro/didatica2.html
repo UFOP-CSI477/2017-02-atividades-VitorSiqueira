@@ -1,0 +1,67 @@
+<!--
+Aluno: Vitor de Siqueira Cotta
+Matrícula: 14.1.8143
+Disciplina: CSI477 - SISTEMAS WEB I - Turma 11
+Professor: FERNANDO BERNARDES DE OLIVEIRA
+Atividade: Atividade Prática 2 - HTML, CSS e JS
+Data: 17/12/2017
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Vitor de Siqueira Cotta">
+        <title>Didática 2</title>
+        <link rel="stylesheet" href="_css/bootstrap.css">
+        <link rel="stylesheet" href="_css/estilo.css">
+        <script src="_js/bootstrap.js"></script>
+        <script src="_js/didatica.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img class="logo" src="_imagens/logo.png" alt="UFOP">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Atividade Prática 2</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Página Inicial</a></li>
+                            <li class="active"><a href="didatica1.html">Didática para crianças</a></li>
+                            <li><a href="escala.html">Escala Richter</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <article>
+                <h2>Relacione as figuras geométricas corretamente.</h2>
+                <fieldset>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img id="figCir" src="_imagens/_formasGeometricas/circulo.jpg" class="img-thumbnail" onclick="cliqueFig(this)" alt="Figura Geométrica">
+                            <img id="figTri" src="_imagens/_formasGeometricas/triangulo.jpg" class="img-thumbnail" onclick="cliqueFig(this)" alt="Figura Geométrica">
+                            <img id="figQua" src="_imagens/_formasGeometricas/quadrado.jpg" class="img-thumbnail" onclick="cliqueFig(this)" alt="Figura Geométrica">
+                            <img id="figRet" src="_imagens/_formasGeometricas/retangulo.jpg" class="img-thumbnail" onclick="cliqueFig(this)" alt="Figura Geométrica">
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                        <div class="col-lg-4">
+                            <button id="btnTri" type="button" class="btn" onclick="cliqueBtn(this)">Triângulo</button>;
+                            <button id="btnRet" type="button" class="btn" onclick="cliqueBtn(this)">Retângulo</button>;
+                            <button id="btnCir" type="button" class="btn" onclick="cliqueBtn(this)">Círculo</button>;
+                            <button id="btnQua" type="button" class="btn" onclick="cliqueBtn(this)">Quadrado</button>;
+                        </div>
+                    </div>
+                </fieldset>
+            </article>
+            <footer>
+                Universidade Federal de Ouro Preto <br>
+                Aluno: Vitor de Siqueira Cotta <br>
+                Matrícula: 14.1.8143 <br>
+                E-mail: Vithorkross@outlook.com <br>
+            </footer>
+        </div>
+    </body>
+</html>

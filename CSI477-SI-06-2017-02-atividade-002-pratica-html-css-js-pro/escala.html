@@ -1,0 +1,68 @@
+<!--
+Aluno: Vitor de Siqueira Cotta
+Matrícula: 14.1.8143
+Disciplina: CSI477 - SISTEMAS WEB I - Turma 11
+Professor: FERNANDO BERNARDES DE OLIVEIRA
+Atividade: Atividade Prática 2 - HTML, CSS e JS
+Data: 17/12/2017
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Vitor de Siqueira Cotta">
+        <title>Escala Richter</title>
+        <link rel="stylesheet" href="_css/bootstrap.css">
+        <link rel="stylesheet" href="_css/estilo.css">
+        <script src="_js/bootstrap.js"></script>
+        <script src="_js/escala.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img class="logo" src="_imagens/logo.png" alt="UFOP">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Atividade Prática 2</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Página Inicial</a></li>
+                            <li><a href="didatica1.html">Didática para crianças</a></li>
+                            <li class="active"><a href="escala.html">Escala Richter</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <article>
+                <h2>Escala Richiter</h2>
+                <form name="dados" style="padding-left: 50px; padding-right: 50px;">
+                    <div class="form-group">
+                        <label for="A">Amplitude</label>
+                        <input type="text" class="form-control" name="A" id="A">
+                    </div>
+                    <div id="deltaTempo" class="form-group">
+                        <label for="deltaT">Delta Tempo</label>
+                        <input type="text" class="form-control" name="deltaT" id="deltaT">
+                    </div>
+                    <div id="magnitude" class="form-group">
+                        <label for="M">Magnitude</label>
+                        <input type="text" class="form-control" disabled="disabled" name="M" id="M">
+                    </div>
+                    <div id="efeitoMagnitude" class="form-group">
+                        <label for="efeito">Efeito da Magnitude</label>
+                        <input type="text" class="form-control" disabled="disabled" name="efeito" id="efeito">
+                    </div>
+                    <button type="button" class="btn btn-default" style="width: auto; height: auto;" onclick="calcularEscala()">Calcular</button>
+                </form>
+            </article>
+            <footer>
+                Universidade Federal de Ouro Preto <br>
+                Aluno: Vitor de Siqueira Cotta <br>
+                Matrícula: 14.1.8143 <br>
+                E-mail: Vithorkross@outlook.com <br>
+            </footer>
+        </div>
+    </body>
+</html>

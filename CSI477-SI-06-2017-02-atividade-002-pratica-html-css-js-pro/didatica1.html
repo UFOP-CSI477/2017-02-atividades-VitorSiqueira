@@ -1,0 +1,198 @@
+<!--
+Aluno: Vitor de Siqueira Cotta
+Matrícula: 14.1.8143
+Disciplina: CSI477 - SISTEMAS WEB I - Turma 11
+Professor: FERNANDO BERNARDES DE OLIVEIRA
+Atividade: Atividade Prática 2 - HTML, CSS e JS
+Data: 17/12/2017
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Vitor de Siqueira Cotta">
+        <title>Didática 1</title>
+        <link rel="stylesheet" href="_css/bootstrap.css">
+        <link rel="stylesheet" href="_css/estilo.css">
+        <script src="_js/bootstrap.js"></script>
+        <script src="_js/didatica.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img class="logo" src="_imagens/logo.png" alt="UFOP">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Atividade Prática 2</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Página Inicial</a></li>
+                            <li class="active"><a href="didatica1.html">Didática para crianças</a></li>
+                            <li><a href="escala.html">Escala Richter</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <article>
+                <h2>Selecione as imagens que não pertencem nos grupos abaixo.</h2>
+                <br>
+                <fieldset>
+                    <legend>Grupo 1</legend>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo1/arroz.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Arroz">
+                                <figcaption>1. Arroz</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo1/feijao.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Feijão">
+                                <figcaption>2. Feijão</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo1/batata.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Batata">
+                                <figcaption>3. Batata</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo1/sabao.jpg" class="img-circle" onclick="cliqueImagemCorreto(this)" alt="Sabonete">
+                                <figcaption>4. Sabonete</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Grupo 2</legend>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo2/algodao.jpg" class="img-circle" onclick="cliqueImagemCorreto(this)" alt="Algodão Doce">
+                                <figcaption>1. Algodão Doce</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo2/bicicleta.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Bicicleta">
+                                <figcaption>2. Bicicleta</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo2/carro.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Carro">
+                                <figcaption>3. Carro</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo2/moto.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Moto">
+                                <figcaption>4. Moto</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Grupo 3</legend>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo3/cadeira.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Cadeira de Praia">
+                                <figcaption>1. Cadeira de Praia</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo3/guardaSol.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Guarda Sol">
+                                <figcaption>2. Guarda Sol</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo3/maquinaDeLavar.jpg" class="img-circle" onclick="cliqueImagemCorreto(this)" alt="Máquina de Lavar">
+                                <figcaption>3. Máquina de Lavar</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo3/oculos.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Óculos de Sol">
+                                <figcaption>4. Óculos de Sol</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Grupo 4</legend>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo4/bola.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Bola">
+                                <figcaption>1. Bola</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo4/chaveFenda.jpg" class="img-circle" onclick="cliqueImagemCorreto(this)" alt="Chave de Fenda">
+                                <figcaption>2. Chave de Fenda</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo4/patins.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Patins">
+                                <figcaption>3. Patins</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="_imagens/_grupo4/skate.jpg" class="img-circle" onclick="cliqueImagemIncorreto(this)" alt="Skate">
+                                <figcaption>4. Skate</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </fieldset>
+                <a class="btn btn-default btnPadrao" href="didatica2.html">Próximo exercício</a>
+            </article>
+            <footer>
+                Universidade Federal de Ouro Preto <br>
+                Aluno: Vitor de Siqueira Cotta <br>
+                Matrícula: 14.1.8143 <br>
+                E-mail: Vithorkross@outlook.com <br>
+            </footer>
+        </div>
+    </body>
+</html>

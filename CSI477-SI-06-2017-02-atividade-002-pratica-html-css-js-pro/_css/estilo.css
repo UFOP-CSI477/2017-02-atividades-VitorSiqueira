@@ -1,0 +1,119 @@
+/*
+Aluno: Vitor de Siqueira Cotta
+Matrícula: 14.1.8143
+Disciplina: CSI477 - SISTEMAS WEB I - Turma 11
+Professor: FERNANDO BERNARDES DE OLIVEIRA
+Atividade: Atividade Prática 2 - HTML, CSS e JS
+Data: 17/12/2017
+*/
+
+/*TAGS*/
+
+body {
+    background: black;
+}
+
+h2 {
+    background: darkred;
+    color: white;
+    margin-top: 0px;
+    padding: 50px;
+    text-align: center;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
+
+figcaption {
+    background: DarkGray;
+    width: 250px;
+}
+
+fieldset { 
+    display: block;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove;
+}
+
+legend {
+    display: block;
+    background: darkgray;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}
+
+article {
+    background-color: gray;
+    min-height: 1000px;
+}
+
+footer {
+    background-color: darkred;
+    bottom: 0;
+    color: white;
+    font-size: 14px;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+/*CLASSES*/
+
+img.logo {
+    height: auto;
+    margin-bottom: 15px;
+    width: auto;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.img-circle {
+  background: black;
+  padding: 5px;
+}
+
+.img-thumbnail {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.btnPadrao {
+    height: auto; 
+    margin: 10px;
+    width: auto;
+}
+
+.selecionado {
+    background: yellow;
+    padding: 10px;
+}
+
+.correto {
+    background: green;
+    color: white;
+    padding: 10px;
+}
+
+.incorreto {
+    background: red;
+    padding: 10px;
+}
