@@ -1,0 +1,43 @@
+/*TAG*/
+
+body {
+    background: black;
+}
+
+footer {
+    background-color: darkred;
+    bottom: 0;
+    color: white;
+    font-size: 14px;
+    padding: 15px;
+    margin: 0px; 
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    background-color: #e7e7e7;
+    min-height: 1000px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/*CLASSE*/
+
+h1.titulo {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+div.atividade {
+    background: #faf2cc;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+nav.barraNav {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
