@@ -1,21 +1,4 @@
-<!--
-Aluno: Vitor de Siqueira Cotta
-Matrícula: 14.1.8143
-Disciplina: CSI477 - SISTEMAS WEB I - Turma 11
-Professor: Fernando Bernardes de Oliveira
-Atividades
-Data: ##/##/2018
--->
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Vitor de Siqueira Cotta">
-        <link rel="stylesheet" href="Frameworks/bootstrap-3.3.7-dist/css/bootstrap.css">
-        <link rel="stylesheet" href="Frameworks/font-awesome-4.7.0/css/font-awesome.css">
-        <link rel="stylesheet" href="estilo.css">
-        <script src="Frameworks/jquery-3.3.1.js"></script>
-        <script src="Frameworks/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<?php include './PHPInclude/topo.php'; ?>
         <title>Atividade 11 - PHP: validar.php -> exibir as informações do Formulário de Cadastro</title>
     </head>
     <body>
@@ -149,14 +132,4 @@ Data: ##/##/2018
                     <br>
                     <a class="btn btn-default" href="atividade10.html">Voltar</a>
                     <a class="btn btn-default" href="atividade12.php">Avançar</a>
-                </div>
-            </main>
-            <footer>
-                Universidade Federal de Ouro Preto <br>
-                Aluno: Vitor de Siqueira Cotta <br>
-                Matrícula: 14.1.8143 <br>
-                E-mail: Vithorkross@outlook.com <br>
-            </footer>
-        </div>
-    </body>
-</html>
+                <?php include './PHPInclude/rodape.php'; ?>
